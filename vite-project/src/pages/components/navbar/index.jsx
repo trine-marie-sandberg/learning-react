@@ -18,7 +18,7 @@ const Ul = styled.ul`
 console.log(Nav)
 export function NavBar() {
     return(
-        <Nav className="nav">
+        <Nav>
             <Ul>
                 <Li isActive = {true}>Home</Li>
                 <Li>Page 1</Li>
