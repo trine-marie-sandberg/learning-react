@@ -1,3 +1,9 @@
-body {
+.wrapper {
     color: rgb(182, 255, 175);
+    display: flex;
+    justify-content: center;
+}
+.mainContent {
+    width: fit-content;
+    padding: 2rem;
 }
