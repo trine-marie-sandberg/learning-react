@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-//import "./navstyle.css";
 
+//STYLING
 const Nav =  styled.nav`
-  border-bottom: solid 1px rgb(158, 250, 163);
-  color: rgb(109, 206, 100);
+  color: rgb(157, 255, 148);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -24,16 +23,17 @@ const I = styled.i`
   padding: 5px;
 `;
 
+//CONPONMENT
 console.log(Nav)
 export function NavBar() {
     return(
         <Nav>
           <I className="icon fa-brands fa-react"></I>
             <Ul>
-                <Li isActive = {true}>Home</Li>
-                <Li>Page 1</Li>
-                <Li>Page 2</Li>
-                <Li>Page 3</Li>
+                <Li isActive = {false}>Home</Li>
+                <Li isActive = {false}>Page 2</Li>
+                <Li isActive = {false}>Page 3</Li>
+                <Li isActive = {false}>Page 4</Li>
             </Ul>
         </Nav>
     )
