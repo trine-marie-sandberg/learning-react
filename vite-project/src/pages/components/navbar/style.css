@@ -1,0 +1,29 @@
+a {
+    color: rgb(157, 255, 148);
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 5px;
+}
+@keyframes underline {
+    0% {border-bottom: 1px solid rgb(36, 43, 42)}
+    10% {border-bottom: 1px solid rgb(79, 141, 76)}
+    20% {border-bottom: 1px solid rgb(116, 185, 112)}
+    50% {border-bottom: 1px solid rgb(157, 255, 148)}
+
+    70% {border-bottom: 1px solid rgb(116, 185, 112)}
+    80% {border-bottom: 1px solid rgb(79, 141, 76)}
+    90% {border-bottom: 1px solid rgb(36, 65, 35)}
+    100% {border-bottom: 1px solid rgb(36, 43, 42)}
+}
+.active {
+    border-bottom: 1px solid rgb(157, 255, 148);
+    transition: 100ms;
+    color: rgb(157, 255, 148);
+}
+li {
+    padding: 5px;
+}
+li :hover:not(a.active) {
+    animation-name: underline;
+    animation-duration: 2s;
+}
