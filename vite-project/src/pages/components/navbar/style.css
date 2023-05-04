@@ -1,5 +1,5 @@
 a {
-    color: rgb(157, 255, 148);
+    color: rgb(182, 255, 175);
     text-decoration: none;
     font-size: 1.6rem;
     padding: 5px;
@@ -9,16 +9,23 @@ a {
     10% {border-bottom: 1px solid rgb(79, 141, 76)}
     20% {border-bottom: 1px solid rgb(116, 185, 112)}
     50% {border-bottom: 1px solid rgb(157, 255, 148)}
-
     70% {border-bottom: 1px solid rgb(116, 185, 112)}
     80% {border-bottom: 1px solid rgb(79, 141, 76)}
     90% {border-bottom: 1px solid rgb(36, 65, 35)}
     100% {border-bottom: 1px solid rgb(36, 43, 42)}
 }
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+@keyframes spin2 {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
 .active {
-    border-bottom: 1px solid rgb(157, 255, 148);
+    border-bottom: 1px solid rgb(211, 253, 207);
     transition: 100ms;
-    color: rgb(157, 255, 148);
+    color: rgb(211, 253, 207);
 }
 li {
     padding: 5px;
@@ -26,4 +33,12 @@ li {
 li :hover:not(a.active) {
     animation-name: underline;
     animation-duration: 2s;
+}
+i {
+    animation-name: spin2;
+    animation-duration: 1s;
+}
+i:hover {
+    animation-name: spin;
+    animation-duration: 4s;
 }
