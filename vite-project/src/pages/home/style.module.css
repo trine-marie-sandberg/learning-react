@@ -3,7 +3,10 @@
     display: flex;
     justify-content: center;
 }
-
+@keyframes glow{
+    from {box-shadow: rgb(11, 19, 10) 0px 7px 29px 0px;}
+    to {box-shadow: rgba(182, 255, 175, 0.897) 0px 7px 29px 0px;}
+}
 .mainContent {
     color: rgb(182, 255, 175);
     width: 20vw;
@@ -14,5 +17,7 @@
     box-shadow: rgba(0, 0, 0, 0.555) 0px 7px 29px 0px;
 }
 .mainContent:hover {
-    animation-duration: 5s;
+    animation-name: glow;
+    animation-duration: 1.5s;
+    box-shadow: rgba(182, 255, 175, 0.897) 0px 7px 29px 0px;
 }
